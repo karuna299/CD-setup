@@ -28,7 +28,8 @@ jobs:
   deploy:
     needs: test
     runs-on: ubuntu-latest
-    
+    environment: 
+      name: production    
     steps:
       - name: Simulate deployment
         run: |
