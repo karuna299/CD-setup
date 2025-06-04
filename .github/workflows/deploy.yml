@@ -31,6 +31,9 @@ jobs:
     environment: 
       name: production    
     steps:
+      - name: Waiting for manual
+        run: echo "waiting for manual approval"
       - name: Simulate deployment
         run: |
+          echo "approved"
           nohup python3 -m http.server 8000 &
