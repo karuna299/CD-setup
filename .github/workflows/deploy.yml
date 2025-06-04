@@ -23,7 +23,7 @@ jobs:
       
       - name: Run test
         run: |
-          pytest -v test_app.py
+          pytest test_app.py
 
   deploy:
     needs: test
